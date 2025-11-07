@@ -8,7 +8,7 @@
   "authorEmail": "leonardogalvarezm@gmail.com",
   "authorUrl": "",
   "pluginUrl": "",
-  "manualUrl": "https://github.com/goster-mp3/ghostAudio",
+  "manualUrl": "https://github.com/goster-mp3/ghostAudio/blob/main/UserManual.md",
   "sourceUrl": "https://github.com/goster-mp3/ghostAudio",
   "donateUrl": "",
   "changelogUrl": "",
@@ -22,4 +22,5 @@
       ]
     }
   ]
+
 }
