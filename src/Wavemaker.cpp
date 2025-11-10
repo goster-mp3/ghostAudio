@@ -53,8 +53,6 @@ struct Wavemaker : Module {
 
 	float phase = 0.f;
 	dsp::SchmittTrigger syncTrigger;
-	float sawFilterInit = 0.f;
-	float squareFilterInit = 0.f;
 	float syncLight = 0.f;
 
 	void process(const ProcessArgs& args) override {
@@ -181,5 +179,6 @@ struct WavemakerWidget : ModuleWidget {
 		addChild(createLight<MediumLight<WhiteLight>>(mm2px(Vec(23.83, 81.62)), module, Wavemaker::SYNC_LIGHT));
 	}
 };
+
 
 Model* modelWavemaker = createModel<Wavemaker, WavemakerWidget>("Wavemaker");
