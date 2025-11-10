@@ -135,8 +135,8 @@ struct Wavemaker : Module {
 
 		outputs[SIN_OUTPUT].setVoltage(sine * 5.f);	
 		outputs[TRI_OUTPUT].setVoltage(triangle * 5.f);
-		outputs[SAW_OUTPUT].setVoltage(sawFiltered * 5.f);
-		outputs[SQR_OUTPUT].setVoltage(squareFiltered * 5.f);
+		outputs[SAW_OUTPUT].setVoltage(sawtooth * 5.f);
+		outputs[SQR_OUTPUT].setVoltage(square * 5.f);
 		outputs[NOISE_OUTPUT].setVoltage(noise * 5.f);
 
 		phase += phaseInc;
@@ -182,3 +182,4 @@ struct WavemakerWidget : ModuleWidget {
 
 
 Model* modelWavemaker = createModel<Wavemaker, WavemakerWidget>("Wavemaker");
+
