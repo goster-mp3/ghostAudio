@@ -2,8 +2,7 @@
 
 **Wavemaker** is a versatile audio oscillator module for VCV Rack 2 designed to **generate multiple waveforms** simultaneously, including sine, triangle, sawtooth, square (with pulse width control), and white noise.
 
-It features **frequency control**, **frequency modulation (FM)**, **amplitude modulation (AM)**, **pulse width modulation (PWM)**, and **hard synchronization (Sync)**, along with an *adaptive filter* that reduces aliasing while still preserving high harmonic information.
-
+It features **frequency control**, **frequency modulation (FM)**, **amplitude modulation (AM)**, **pulse width modulation (PWM)**, and **hard synchronization (Sync)**.
 It offers both *sound design versatility* and a *clean, efficient DSP architecture* for any modular setup.
 
 This manual provides an overview of all controls, inputs, and outputs, as well as a detailed explanation of the module’s main features and internal behavior.
@@ -42,9 +41,9 @@ All outputs are normalized to **±5 V**, according to VCV Voltage Standards.
 
 - **Triangle Output:** Produces a triangle wave.
 
-- **Saw Output:** Produces a sawtooth wave with adaptive anti-alias filtering.
+- **Saw Output:** Produces a sawtooth wave.
 
-- **Square Output:** Produces a pulse wave with PWM and adaptive filtering.
+- **Square Output:** Produces a pulse wave with Pulse Width Modulation (PWM).
 
 - **Noise Output:** Produces white noise.
 
@@ -82,29 +81,13 @@ When the Sync input receives a *trigger* signal, the oscillator’s phase **rese
 
 The LED indicator flashes *each time* a sync trigger is received, providing visual feedback of synchronization.
 
-# 4. Adaptive Anti-Aliasing Filter
-
-Wavemaker includes an *internal adaptive low-pass filter* applied to the **sawtooth and square waveforms**, designed to *reduce aliasing* artifacts at high frequencies.
-
-The filter dynamically **adjusts its cutoff frequency** in relation to the *oscillator’s pitch* and the *audio sampling rate*.
-
-This design ensures:
-
-- Preservation of high harmonic content at low and mid frequencies.
-
-- Smooth attenuation of upper harmonics as pitch increases.
-
-- Natural timbral balance across the oscillator’s full range without introducing phase distortion.
-
-- The filter operates entirely **automatically** — no additional user adjustment is needed.
-
-# 5. Support and Updates
+# 4. Support and Updates
 
 The latest source code, documentation, and update notes are available on the **official GitHub repository**.
 
 If you encounter any issues, please **report them** through the *Issues* section on GitHub, specifying your operating system, Rack version, and steps to reproduce the problem.
 
-# 6. Acknowledgments
+# 5. Acknowledgments
 
 ***Wavemaker*** was developed as both a **creative and academic** project, focused on providing a ***simple, versatile, and efficient*** oscillator design for VCV Rack users.
 
