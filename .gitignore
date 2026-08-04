@@ -3,7 +3,7 @@
 /dep
 /*.so
 /*.dylib
-/*.dll
+*.dll
 .DS_Store
 .vs/
 .vscode/
