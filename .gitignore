@@ -5,3 +5,6 @@
 /*.dylib
 /*.dll
 .DS_Store
+.vs/
+.vscode/
+*.ipch
